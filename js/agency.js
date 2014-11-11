@@ -8,8 +8,9 @@
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+        var headerHeight = 113;
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - headerHeight
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
