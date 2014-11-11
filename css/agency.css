@@ -260,7 +260,7 @@ display: none;
 .nav {
     text-align:center !important;
     float: none !important;
-    margin:0;
+    margin-bottom: 1% !important;
     padding:0;
 }
 
@@ -1274,11 +1274,10 @@ section#about {
     padding: 30px 0;
 }
 
-section#team {
-    padding: 30px 0;
-}
+
 
 section#team h2.section-heading {
+    padding-top: 30px !important;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
@@ -1307,6 +1306,12 @@ section#team h2.section-heading {
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 150%;
+    margin-bottom: 3% !important; 
+
+}
+
+.classic-des carousel-classic  {
+    visibility: hidden !important;
 }
 
 .mocha-title {
@@ -1322,6 +1327,7 @@ section#team h2.section-heading {
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 150%;
+  margin: 0 auto !important;
 }
 
 .oatmeal-title {
@@ -1337,6 +1343,8 @@ section#team h2.section-heading {
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 150%;
+  margin-bottom: 3% !important; 
+
 }
 
 
@@ -1397,6 +1405,8 @@ display:none;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 250%;
+    margin-bottom: -15% !important; 
+
 }
 
 .mocha-title {
@@ -1412,6 +1422,8 @@ display:none;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 250%;
+      margin-bottom: -15% !important; 
+
 }
 
 .oatmeal-title {
@@ -1427,6 +1439,8 @@ display:none;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 250%;
+   margin-bottom: -15% !important; 
+
 }
 
 
@@ -1483,6 +1497,7 @@ display:none;
     float: left;
     list-style: none;
     text-align: left;
+    padding-top: 1%;
 }
 
 }
@@ -1503,6 +1518,7 @@ display:none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 300%;
   line-height: 120%;
+  margin-bottom: 3% !important; 
 }
 
 .mocha-title {
@@ -1519,6 +1535,7 @@ display:none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 300%;
   line-height: 120%;
+
 }
 
 .oatmeal-title {
@@ -1535,6 +1552,8 @@ display:none;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   font-size: 300%;
   line-height: 120%;
+    margin-bottom: 3% !important; 
+
 }
 
 
