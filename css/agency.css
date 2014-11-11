@@ -355,6 +355,12 @@ background-color: #222;
 padding-top: 5%;
 padding-bottom: 15px;
 }
+
+.nav>li>a {
+    padding-left: 0px;
+    padding: 3px;
+}
+
 }
 
 .navbar-nav>li>a {
@@ -1037,7 +1043,7 @@ border-radius: 25px;
 .carousel-indicators .active {
 width: 25px;
 height: 25px;
-margin: 0;
+margin: 1px;
 background-color: #fff;
 }
 
@@ -1285,11 +1291,14 @@ section#team h2.section-heading {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { .classic-title {
+@media (max-width: 768px) { 
+
+
+.classic-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 60%;
+  bottom: 23%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1304,7 +1313,7 @@ section#team h2.section-heading {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 70%;
+  bottom: 43%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1318,8 +1327,8 @@ section#team h2.section-heading {
 .oatmeal-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  right: 10% !important;
-  bottom: 60%;
+  right: 0% !important;
+  bottom: 23%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1332,7 +1341,11 @@ section#team h2.section-heading {
 
 
 
-.classic-list {
+.classic-des {
+display:none;
+}
+
+.mocha-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1348,23 +1361,7 @@ section#team h2.section-heading {
   max-width: 40%;
 }
 
-.mocha-list {
-  position: absolute;
-  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  right: 10% !important;
-  bottom: 15%;
-  left: 50% !important;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 100%;
-  max-width: 40%;
-}
-
-.oatmeal-list {
+.oatmeal-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1387,7 +1384,7 @@ section#team h2.section-heading {
 } }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { .classic-title {
+@media (min-width: 768px) { .classic-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1434,7 +1431,7 @@ section#team h2.section-heading {
 
 
 
-.classic-list {
+.classic-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1446,11 +1443,11 @@ section#team h2.section-heading {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 200%;
+  font-size: 150%;
   max-width: 40%;
 }
 
-.mocha-list {
+.mocha-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1462,11 +1459,11 @@ section#team h2.section-heading {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 200%;
+  font-size: 150%;
   max-width: 40%;
 }
 
-.oatmeal-list {
+.oatmeal-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
@@ -1478,7 +1475,7 @@ section#team h2.section-heading {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 200%;
+  font-size: 150%;
   max-width: 40%;
 }
 
@@ -1491,12 +1488,12 @@ section#team h2.section-heading {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { 
+@media (min-width: 1200px) { 
 .classic-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 60%;
+  bottom: 65%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1504,14 +1501,15 @@ section#team h2.section-heading {
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
+  font-size: 300%;
+  line-height: 120%;
 }
 
 .mocha-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 70%;
+  bottom: 75%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1519,14 +1517,15 @@ section#team h2.section-heading {
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
+  font-size: 300%;
+  line-height: 120%;
 }
 
 .oatmeal-title {
   position: absolute;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 60%;
+  bottom: 65%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1534,16 +1533,32 @@ section#team h2.section-heading {
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
+  font-size: 300%;
+  line-height: 120%;
 }
 
 
 
-.classic-list {
+.classic-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 35%;
+  bottom: 41%;
+  left: 50% !important;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  font-size: 200%;
+  max-width: 40%;
+}
+
+.mocha-des {
+  position: absolute;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  right: 10% !important;
+  bottom: 41%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1555,27 +1570,11 @@ section#team h2.section-heading {
   max-width: 40%;
 }
 
-.mocha-list {
+.oatmeal-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
   right: 10% !important;
-  bottom: 35%;
-  left: 50% !important;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 200%;
-  max-width: 40%;
-}
-
-.oatmeal-list {
-  position: absolute;
-  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  right: 10% !important;
-  bottom: 35%;
+  bottom: 41%;
   left: 50% !important;
   z-index: 10;
   padding-top: 20px;
@@ -1592,7 +1591,10 @@ section#team h2.section-heading {
     list-style: none;
     text-align: left;
 }
+
+.slide-des {
+    font-size: 65%;
 }
 
-
+}
 
