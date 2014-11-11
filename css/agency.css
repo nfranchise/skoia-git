@@ -1349,9 +1349,6 @@ section#team h2.section-heading {
 
 
 
-.classic-des {
-display:none;
-}
 
 .mocha-des {
   position: absolute;
@@ -1389,6 +1386,7 @@ display:none;
     float: left;
     list-style: none;
     text-align: left;
+    visibility: hidden;
 } }
 
 /* Medium devices (desktops, 992px and up) */
@@ -1404,9 +1402,7 @@ display:none;
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
-    margin-bottom: -15% !important; 
-
+  font-size: 150%;
 }
 
 .mocha-title {
@@ -1421,8 +1417,7 @@ display:none;
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
-      margin-bottom: -15% !important; 
+  font-size: 150%;
 
 }
 
@@ -1438,8 +1433,7 @@ display:none;
   color: #fff;
   text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 250%;
-   margin-bottom: -15% !important; 
+  font-size: 150%;
 
 }
 
@@ -1448,17 +1442,12 @@ display:none;
 .classic-des {
   position: absolute;
   font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  right: 10% !important;
   bottom: 35%;
   left: 50% !important;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  font-size: 150%;
-  max-width: 40%;
 }
 
 .mocha-des {
